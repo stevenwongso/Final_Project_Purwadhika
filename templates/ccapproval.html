@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Credit Card Approval</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/jquery.timepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/fancybox.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='hometemplate/css/style.css') }}">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='signuptemplate/css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='signuptemplate/css/main.css') }}">
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand">CREDIT CARD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="http://localhost:5000/home" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="http://localhost:5000/credit-card-approval" class="nav-link">Credit Card Overdue</a></li>
+            <li class="nav-item"><a href="http://localhost:5000/credit-card-segmentation" class="nav-link">Market Segmentation</a></li>
+            <li class="nav-item"><a href="http://localhost:5000/credit-card-data-visualization" class="nav-link">Data Visualization</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+  
+    <div class="block-31" style="position: relative;">
+      <div class="owl-carousel loop-block-31 ">
+        <div class="block-30 block-30-sm item"  style="background-image: url({{url_for('static',filename='hometemplate/images/bg 1.jpg')}});"  data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+              <div class="col-md-7">
+                <h2 class="heading mb-5">Credit Card Overdue</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="site-section section-counter">
+    
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 mb-5 mb-md-0">
+          <img src="{{url_for('static',filename='hometemplate/images/ccapp2.jpg')}}" alt="Image placeholder" class="img-fluid">
+        </div>
+
+        <div class="col-md-6 pl-md-5">
+
+          <div class="form-volunteer">
+            
+              <form class="login100-form validate-form" action="http://localhost:5000/credit-card-approval-result" method="POST" >
+                <span class="login100-form-title p-b-59">
+                  Credit Card Form
+                </span>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Gender</span>
+                  <select class="input100" name="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Do you have car?</span>
+                  <select class="input100" name="car">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Do you have Property?</span>
+                  <select class="input100" name="property">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+      
+                <div class="wrap-input100 validate-input" data-validate="Number of child is required">
+                  <span class="label-input100">Number of Child (data range from 0-2) </span>
+                  <input class="input100" type="number" name="child" placeholder="Number of Child ....">
+                  <span class="focus-input100"></span>
+                </div>
+      
+                <div class="wrap-input100 validate-input" data-validate = "Amount income is required">
+                  <span class="label-input100">Amount Income Total (data range from 27000-378000)</span>
+                  <input class="input100" type="text" name="income" placeholder="Income...">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Age is required">
+                  <span class="label-input100">Age (data range from 20-66)</span>
+                  <input class="input100" type="number" name="usia" placeholder="Age...">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "LOE is Required">
+                  <span class="label-input100">Length Of Employment (years) (data range from 0-18)</span>
+                  <input class="input100" type="number" name="loe" placeholder="Length of Employment...">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Do you have Workphone?</span>
+                  <select class="input100" name="workphone">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Do you have Phone?</span>
+                  <select class="input100" name="phone">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Do you have Email?</span>
+                  <select class="input100" name="email">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Family Size is Required">
+                  <span class="label-input100">Family Size (data range from 1-4)</span>
+                  <input class="input100" type="number" name="famsize" placeholder="Family Size...">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Income Type</span>
+                  <select class="input100" name="incometype">
+                    <option value="working">Working</option>
+                    <option value="commercial">Commercial Associate</option>
+                    <option value="pensioner">Pensioner</option>
+                    <option value="state">State servant</option>
+                    <option value="student">Student</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Education</span>
+                  <select class="input100" name="education">
+                    <option value="higher">Higher education</option>
+                    <option value="secondary">Secondary / secondary special</option>
+                    <option value="incomplete">Incomplete higher</option>
+                    <option value="lower">Lower secondary</option>
+                    <option value="academic">Academic degree</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Martial Status</span>
+                  <select class="input100" name="martial">
+                    <option value="cm">Civil Marriage</option>
+                    <option value="m">Married</option>
+                    <option value="nm">Single</option>
+                    <option value="s">Seperated</option>
+                    <option value="w">Widow</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Housing Type</span>
+                  <select class="input100" name="housing">
+                    <option value="ra">Rented apartment</option>
+                    <option value="h">House / apartment</option>
+                    <option value="ma">Municipal apartment</option>
+                    <option value="p">Parents</option>
+                    <option value="ca">Co-op apartment</option>
+                    <option value="oa">Office apartment</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Occupation Type</span>
+                  <select class="input100" name="occupation">
+                    <option value="security">Security Staff</option>
+                    <option value="sales">Sales Staff</option>
+                    <option value="acc">Accountants</option>
+                    <option value="man">Managers</option>
+                    <option value="driver">Drivers</option>
+                    <option value="core">Core Staff</option>
+                    <option value="tech">High Skil tech Staff</option>
+                    <option value="clean">Cleaning Staff</option>
+                    <option value="private">Private service Staff</option>
+                    <option value="cooking">Cooking Staff</option>
+                    <option value="labor">Laborers</option>
+                    <option value="ls">Low Skill Laborers</option>
+                    <option value="med">Medicine Staff</option>
+                    <option value="secre">Secretaries</option>
+                    <option value="ws">Waiters/Barmen Staff</option>
+                    <option value="hr">HR Staff</option>
+                    <option value="ra">Realty Agents</option>
+                    <option value="it">IT Staff</option>
+                    <option value="other">Others</option>
+                  </select>
+                  <span class="focus-input100"></span>
+                </div>
+                
+                <div class="flex-m w-full p-b-33">
+                  
+                </div>
+      
+                <div class="container-login100-form-btn">
+                  <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+                    <input type="submit"  clvalue='Submit'>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div> <!-- .featured-donate -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section">About Us</h3>
+          <span class="lead">This project was developed as one of the requirements to fullfill in Purwadhika Job Connector - Data Science Program.</span>
+          <li><span class="mb-5">Credit to the owner of all the dataset and template that this project use</span></li>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="block-23">
+            <h3 class="heading-section">Get Connected</h3>
+              <ul>
+                <li><span class="text"> Steven Wongso</span></li>
+                <li><span class="icon icon-phone"></span><span class="text">+62 877 2232 6979</span></a></li>
+                <li><span class="icon icon-envelope"></span><span class="text">stevenwongso97@gmail.com</span></a></li>
+                <li><span class="text"> Github : https://github.com/stevenwongso</span></li>
+              </ul>
+            </div>
+        </div>
+        
+        
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-12 text-center">
+          
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/bootstrap-datepicker.js') }}"></script>
+
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.fancybox.min.js') }}"></script>
+  
+  <script src="{{ url_for('static',filename='hometemplate/js/aos.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/google-map.js') }}"></script>
+  <script src="{{ url_for('static',filename='hometemplate/js/main.js') }}"></script>
+    
+  </body>
+</html>
