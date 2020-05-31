@@ -56,9 +56,9 @@ In this Project, There are two main feature :
 
 Data Dictionary :
 
-<img src = 'ModelImage/Credit Approval Explanation.JPG' width="600" height="400" />
+<img src = 'ModelImage/Credit Approval Explanation.JPG' width="800" height="800" />
 
-<img src = 'ModelImage/Credit record explanation.JPG' width="600" height="400" />
+<img src = 'ModelImage/Credit record explanation.JPG' width="800" height="200" />
 
 Model ML: 
 
@@ -74,7 +74,7 @@ Model ML:
 
 Data Dictionary :
 
-<img src = 'ModelImage/Credit Segmentation Explanation.JPG' width="800" height="800" />
+<img src = 'ModelImage/Credit Segmentation Explanation.JPG' width="800" height="600" />
 
 Model ML :
 
@@ -90,30 +90,30 @@ __1. Login - Sign Up Page :__
 This project use MySQL as main RDBMS for login-signup
 
 <br>
-<img src = 'ReadmeImage/login.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/login.JPG' width="800" height="400" />
 
 <br>
-<img src = 'ReadmeImage/Sign Up.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Sign Up.JPG' width="800" height="400" />
 
 __2. Home Page :__
 
 <br>
-<img src = 'ReadmeImage/Home.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Home.JPG' width="800" height="400" />
 
 __3. Credit Card Overdue Prediction :__
 
 <br>
-<img src = 'ReadmeImage/Overdue.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Overdue.JPG' width="800" height="400" />
 
 __4. Credit Card Customer Segmentation :__
 
 <br>
-<img src = 'ReadmeImage/Segmentation.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Segmentation.JPG' width="800" height="400" />
 
 __5. Data Visualization :__
 
 <br>
-<img src = 'ReadmeImage/DataViz.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/DataViz.JPG' width="800" height="400" />
 
 ## Result
 <hr>
@@ -121,7 +121,7 @@ __5. Data Visualization :__
 Some Example of the result page that shown on the web
 
 <br>
-<img src = 'ReadmeImage/Result Overdue Prediction.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Result Overdue Prediction.JPG' width="800" height="400" />
 
 <br>
-<img src = 'ReadmeImage/Result Segmentation.JPG' width="800" height="600" />
+<img src = 'ReadmeImage/Result Segmentation.JPG' width="800" height="400" />
